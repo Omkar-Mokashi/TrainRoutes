@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainRoutes", "TrainRoutes\TrainRoutes.csproj", "{3FD92C87-F239-4FCE-A0B5-B50C4B8F6AFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FD92C87-F239-4FCE-A0B5-B50C4B8F6AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD92C87-F239-4FCE-A0B5-B50C4B8F6AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD92C87-F239-4FCE-A0B5-B50C4B8F6AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD92C87-F239-4FCE-A0B5-B50C4B8F6AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
