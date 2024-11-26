@@ -26,4 +26,13 @@ public class Graph
     {
         return routes.ContainsKey(town) ? routes[town] : new List<Route>();
     }
+    
+    /// <summary>
+    /// Get all existing towns according to the input specified
+    /// </summary>
+    /// <returns></returns>
+    public IEnumerable<string> GetAllTowns()
+    {
+        return routes.Keys;
+    }
 }
