@@ -1,5 +1,8 @@
 namespace TrainRoutes;
 
+/// <summary>
+/// This is our Route DTO class
+/// </summary>
 public class Route
 {
     public string FromTown { get; }
