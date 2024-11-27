@@ -19,6 +19,6 @@ public class RouteCalculator
     /// <returns>Returns the shortest distance between two towns</returns>
     public int GetRouteDistance(Graph graph, string startTown, string endTown, int maxStops = int.MaxValue)
     {
-        return _strategy.CalculateRoute(graph, startTown, endTown, maxStops);
+        return _strategy.CalculateRoute(graph, startTown, endTown);
     }
 }

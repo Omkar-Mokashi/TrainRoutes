@@ -8,9 +8,8 @@ public class ShortestRouteStrategy : IRouteStrategy
     /// <param name="graph"></param>
     /// <param name="startTown"></param>
     /// <param name="endTown"></param>
-    /// <param name="maxStops"></param>
     /// <returns>The shortest distance from startTown to endTown</returns>
-    public int CalculateRoute(Graph graph, string startTown, string endTown, int maxStops = int.MaxValue)
+    public int CalculateRoute(Graph graph, string startTown, string endTown)
     {
         // Dictionary to store the shortest distance to each town
         var distances = new Dictionary<string, int>();
@@ -51,7 +50,7 @@ public class ShortestRouteStrategy : IRouteStrategy
                 var newDistance = distances[currentTown] + route.Distance;
 
                 // If a shorter path to the neighbor is found, update it
-                if (newDistance < distances[neighbor] || distances[neighbor] == 0)
+                if (newDistance < distances[neighbor] || distances[neighbor] == 0) // The second OR condition makes it travel around even if start and end are given the same
                 {
                     distances[neighbor] = newDistance;
                     previousTowns[neighbor] = currentTown;
