@@ -9,8 +9,8 @@ public class TripCalculator
         _strategy = strategy;
     }
 
-    public int GetTripCount(Graph graph, string startTown, string endTown, int conditionValue = int.MaxValue)
+    public int GetTripCount(Graph graph, string startTown, string endTown, int conditionValue = int.MaxValue, CountCondition countCondition = CountCondition.EqualTo)
     {
-        return _strategy.GetTripCount(graph, startTown, endTown, conditionValue);
+        return _strategy.GetTripCount(graph, startTown, endTown, countCondition, conditionValue);
     }
 }

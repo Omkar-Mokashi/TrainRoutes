@@ -39,7 +39,7 @@ public class ShortestPathStrategy : IRouteStrategy
             var currentTown = priorityQueue.Dequeue();
 
             // If we reached the destination, stop
-            if (currentTown == endTown)
+            if (currentTown == endTown && previousTowns.Count != 0)
             {
                 break;
             }
@@ -51,7 +51,7 @@ public class ShortestPathStrategy : IRouteStrategy
                 var newDistance = distances[currentTown] + route.Distance;
 
                 // If a shorter path to the neighbor is found, update it
-                if (newDistance < distances[neighbor])
+                if (newDistance < distances[neighbor] || distances[neighbor] == 0)
                 {
                     distances[neighbor] = newDistance;
                     previousTowns[neighbor] = currentTown;

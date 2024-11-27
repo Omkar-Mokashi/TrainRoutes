@@ -33,6 +33,8 @@ public class Graph
     /// <returns></returns>
     public IEnumerable<string> GetAllTowns()
     {
-        return routes.Keys;
+        var keys = routes.Keys.ToList();
+        var townsInValue = routes.Values.SelectMany(x => x.Select(y => y.ToTown)).Distinct().ToList();
+        return keys.Union(townsInValue);
     }
 }
