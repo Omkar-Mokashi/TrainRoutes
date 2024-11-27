@@ -1,4 +1,4 @@
-namespace TrainRoutes;
+namespace TrainRoutes.Enums;
 
 public enum CountCondition
 {

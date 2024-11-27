@@ -1,6 +1,6 @@
-namespace TrainRoutes;
+namespace TrainRoutes.Strategies.RouteStrategy;
 
-public class ShortestPathStrategy : IRouteStrategy
+public class ShortestRouteStrategy : IRouteStrategy
 {
     /// <summary>
     /// Implement Dijkstra's Algorithm to find the shortest path

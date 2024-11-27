@@ -1,4 +1,4 @@
-namespace TrainRoutes;
+namespace TrainRoutes.Strategies.RouteStrategy;
 
 public interface IRouteStrategy
 {
