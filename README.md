@@ -17,6 +17,6 @@ Non-functional Requirements:
 2. Follow proper design patters
 3. Test coverage
 
-Optimal Solution: Dijkstra's Algorithm for finding the shortest path
-Desgin Patterns: Strategy designn pattern as we have different algorithms for different cases
-Test Coverage: The major functional public methods have test coverage + all the specific test cases provider have been solved.
+- Optimal Solution: Dijkstra's Algorithm for finding the shortest path
+- Desgin Patterns: Strategy designn pattern as we have different algorithms for different cases
+- Test Coverage: The major functional public methods have test coverage + all the specific test cases provider have been solved.
