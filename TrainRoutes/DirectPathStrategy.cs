@@ -1,6 +1,6 @@
 namespace TrainRoutes;
 
-public class DirectRouteStrategy : IRouteStrategy
+public class DirectPathStrategy : IRouteStrategy
 {
     public int CalculateRoute(Graph graph, string startTown, string endTown, int maxStops = Int32.MaxValue)
     {
