@@ -1,4 +1,6 @@
-namespace TrainRoutes;
+using TrainRoutes.Enums;
+
+namespace TrainRoutes.Strategies.TripStrategy;
 
 public class TripCalculator
 {

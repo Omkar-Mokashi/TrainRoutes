@@ -1,12 +1,16 @@
 ﻿using TrainRoutes;
+using TrainRoutes.Enums;
+using TrainRoutes.Strategies.RouteStrategy;
+using TrainRoutes.Strategies.TripStrategy;
 
 class Program
 {
     static void Main(string[] args)
     {
-        var graph = FileReader.ReadGraphFromFile("Inputs\\Input.txt");
+        var inputData = FileReader.ReadGraphFromFile("Inputs\\Input.txt");
+        var graph = GraphGenerator.GenerateGraph(inputData);
 
-        var routeCalculator = new RouteCalculator(new DirectPathStrategy());
+        var routeCalculator = new RouteCalculator(new DirectRouteStrategy());
         var distance1 = routeCalculator.GetRouteDistance(graph, "A", "B");
         var distance2 = routeCalculator.GetRouteDistance(graph, "A", "D");
         var distance3 = routeCalculator.GetRouteDistance(graph, "D", "C");
@@ -36,7 +40,7 @@ class Program
         Console.WriteLine($"Scenario 6: Trip count from C=>C with at maximum 3 stops: {tripCount1}");
         Console.WriteLine($"Scenario 7: Trip count from A=>C with exactly 4 stops: {tripCount2}");
         
-        routeCalculator = new RouteCalculator(new ShortestPathStrategy());
+        routeCalculator = new RouteCalculator(new ShortestRouteStrategy());
         
         var distance9 = routeCalculator.GetRouteDistance(graph, "A", "C");
         var distance10 = routeCalculator.GetRouteDistance(graph, "B", "B");

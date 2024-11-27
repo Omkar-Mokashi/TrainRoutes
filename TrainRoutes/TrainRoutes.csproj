@@ -13,9 +13,4 @@
       </None>
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Strategies\PathStrategy\" />
-      <Folder Include="Strategies\TripStrategy\" />
-    </ItemGroup>
-
 </Project>
