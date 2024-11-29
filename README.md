@@ -10,7 +10,7 @@ These 2 also have 2 different methods of finding the values
    1. Number of trips based on number of stops
    2. Number of trips based on distance
 
-Therefore as we different algorithms for different cases for similar set of case I am using here Strategy Design Pattern
+Therefore, as we are using different algorithms for different cases for similar set of case I am using here Strategy Design Pattern
 
 Non-functional Requirements:
 1. We want optimal solution
@@ -18,7 +18,7 @@ Non-functional Requirements:
 3. Test coverage
 
 - Optimal Solution: Dijkstra's Algorithm for finding the shortest path, used DFS for finding the number of trips.
-- Desgin Patterns: Strategy designn pattern as we have different algorithms for different cases
+- Design Patterns: Strategy design pattern as we have different algorithms for different cases
 - Test Coverage: The major functional public methods have test coverage + all the specific test cases provider have been solved.
 
 The high level flow of the program:
